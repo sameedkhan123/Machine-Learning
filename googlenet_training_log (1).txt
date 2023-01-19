@@ -1,0 +1,441 @@
+Currently using GPU 0
+Initializing image data manager
+=> Initializing TRAIN (source) datasets
+mean and std: tensor([-0.0488,  0.1214,  0.4262]) tensor([1.0995, 1.1306, 1.0656])
+=> Initializing TEST datasets
+
+
+  **************** Summary ****************
+  train names      : ['Aic']
+  # train datasets : 1
+  # train ids      : 174
+  # train images   : 41540
+  # train cameras  : 27
+  test names       : Aic
+  *****************************************
+
+
+Initializing model: resnet101
+Model size: 6.625 M
+=> Start training
+Epoch: [1][100/649]	Time 0.236 (0.325)	Data 0.0003 (0.0067)	Xent 3.9017 (5.4862)	Htri 1.6515 (1.4540)	Acc 37.50 (18.81)	
+Epoch: [1][200/649]	Time 0.236 (0.278)	Data 0.0068 (0.0045)	Xent 2.8336 (4.5266)	Htri 0.8636 (1.1373)	Acc 50.00 (29.02)	
+Epoch: [1][300/649]	Time 0.232 (0.262)	Data 0.0073 (0.0038)	Xent 2.4028 (3.9121)	Htri 0.4602 (0.9492)	Acc 59.38 (36.34)	
+Epoch: [1][400/649]	Time 0.224 (0.259)	Data 0.0003 (0.0035)	Xent 1.6321 (3.4655)	Htri 0.4849 (0.8278)	Acc 68.75 (41.87)	
+Epoch: [1][500/649]	Time 0.245 (0.253)	Data 0.0003 (0.0033)	Xent 1.2127 (3.0911)	Htri 0.3916 (0.7375)	Acc 75.00 (47.04)	
+Epoch: [1][600/649]	Time 0.224 (0.252)	Data 0.0002 (0.0031)	Xent 1.1018 (2.7899)	Htri 0.2563 (0.6627)	Acc 76.56 (51.50)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.034/128
+Computing CMC and mAP
+Results ----------
+mAP: 6.5%
+CMC curve
+Rank-1  : 14.1%
+Rank-5  : 20.6%
+Rank-10 : 25.8%
+Rank-20 : 30.8%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-1"
+Epoch: [2][100/649]	Time 0.251 (0.288)	Data 0.0003 (0.0108)	Xent 0.7808 (0.8646)	Htri 0.1142 (0.2391)	Acc 85.94 (83.31)	
+Epoch: [2][200/649]	Time 0.245 (0.262)	Data 0.0066 (0.0066)	Xent 0.8844 (0.7757)	Htri 0.0257 (0.2284)	Acc 81.25 (84.84)	
+Epoch: [2][300/649]	Time 0.220 (0.259)	Data 0.0004 (0.0051)	Xent 0.5142 (0.7034)	Htri 0.0672 (0.1986)	Acc 92.19 (86.35)	
+Epoch: [2][400/649]	Time 0.235 (0.252)	Data 0.0006 (0.0043)	Xent 0.4106 (0.6316)	Htri 0.2802 (0.1761)	Acc 92.19 (87.96)	
+Epoch: [2][500/649]	Time 0.225 (0.252)	Data 0.0002 (0.0040)	Xent 0.5228 (0.5835)	Htri 0.1960 (0.1693)	Acc 85.94 (89.03)	
+Epoch: [2][600/649]	Time 0.240 (0.250)	Data 0.0003 (0.0035)	Xent 0.3620 (0.5402)	Htri 0.0273 (0.1578)	Acc 90.62 (89.97)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.022/128
+Computing CMC and mAP
+Results ----------
+mAP: 8.4%
+CMC curve
+Rank-1  : 16.7%
+Rank-5  : 23.9%
+Rank-10 : 29.3%
+Rank-20 : 35.6%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-2"
+Epoch: [3][100/649]	Time 0.247 (0.244)	Data 0.0006 (0.0065)	Xent 0.1063 (0.2339)	Htri 0.0358 (0.0623)	Acc 100.00 (96.61)	
+Epoch: [3][200/649]	Time 0.244 (0.249)	Data 0.0005 (0.0042)	Xent 0.2650 (0.2149)	Htri 0.0724 (0.0686)	Acc 95.31 (96.83)	
+Epoch: [3][300/649]	Time 0.224 (0.245)	Data 0.0009 (0.0032)	Xent 0.0991 (0.2004)	Htri 0.0000 (0.0635)	Acc 100.00 (97.10)	
+Epoch: [3][400/649]	Time 0.390 (0.258)	Data 0.0002 (0.0039)	Xent 0.1800 (0.1888)	Htri 0.0000 (0.0630)	Acc 93.75 (97.33)	
+Epoch: [3][500/649]	Time 0.234 (0.253)	Data 0.0003 (0.0035)	Xent 0.1236 (0.1791)	Htri 0.0851 (0.0604)	Acc 98.44 (97.49)	
+Epoch: [3][600/649]	Time 0.328 (0.251)	Data 0.0003 (0.0032)	Xent 0.2383 (0.1717)	Htri 0.0931 (0.0581)	Acc 95.31 (97.55)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.023/128
+Computing CMC and mAP
+Results ----------
+mAP: 9.5%
+CMC curve
+Rank-1  : 16.3%
+Rank-5  : 24.1%
+Rank-10 : 29.5%
+Rank-20 : 35.1%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-3"
+Epoch: [4][100/649]	Time 0.235 (0.261)	Data 0.0003 (0.0075)	Xent 0.1037 (0.1110)	Htri 0.0000 (0.0304)	Acc 100.00 (98.53)	
+Epoch: [4][200/649]	Time 0.256 (0.250)	Data 0.0003 (0.0045)	Xent 0.0847 (0.1004)	Htri 0.0000 (0.0351)	Acc 98.44 (98.74)	
+Epoch: [4][300/649]	Time 0.225 (0.251)	Data 0.0003 (0.0037)	Xent 0.1511 (0.0998)	Htri 0.1536 (0.0397)	Acc 96.88 (98.71)	
+Epoch: [4][400/649]	Time 0.221 (0.248)	Data 0.0053 (0.0031)	Xent 0.0812 (0.0952)	Htri 0.1352 (0.0388)	Acc 98.44 (98.78)	
+Epoch: [4][500/649]	Time 0.231 (0.246)	Data 0.0003 (0.0029)	Xent 0.0712 (0.0907)	Htri 0.0000 (0.0371)	Acc 100.00 (98.90)	
+Epoch: [4][600/649]	Time 0.231 (0.247)	Data 0.0067 (0.0027)	Xent 0.0368 (0.0889)	Htri 0.0298 (0.0353)	Acc 100.00 (98.94)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.024/128
+Computing CMC and mAP
+Results ----------
+mAP: 9.8%
+CMC curve
+Rank-1  : 19.7%
+Rank-5  : 28.9%
+Rank-10 : 31.9%
+Rank-20 : 37.5%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-4"
+Epoch: [5][100/649]	Time 0.244 (0.240)	Data 0.0002 (0.0080)	Xent 0.0927 (0.0586)	Htri 0.0000 (0.0137)	Acc 100.00 (99.53)	
+Epoch: [5][200/649]	Time 0.243 (0.246)	Data 0.0002 (0.0052)	Xent 0.0645 (0.0597)	Htri 0.0650 (0.0141)	Acc 98.44 (99.48)	
+Epoch: [5][300/649]	Time 0.233 (0.242)	Data 0.0004 (0.0042)	Xent 0.0445 (0.0573)	Htri 0.0746 (0.0151)	Acc 100.00 (99.48)	
+Epoch: [5][400/649]	Time 0.242 (0.241)	Data 0.0006 (0.0036)	Xent 0.0195 (0.0555)	Htri 0.0000 (0.0169)	Acc 100.00 (99.50)	
+Epoch: [5][500/649]	Time 0.240 (0.244)	Data 0.0004 (0.0033)	Xent 0.0671 (0.0545)	Htri 0.0000 (0.0160)	Acc 98.44 (99.47)	
+Epoch: [5][600/649]	Time 0.226 (0.243)	Data 0.0005 (0.0031)	Xent 0.0225 (0.0539)	Htri 0.0000 (0.0151)	Acc 100.00 (99.47)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.025/128
+Computing CMC and mAP
+Results ----------
+mAP: 9.9%
+CMC curve
+Rank-1  : 18.0%
+Rank-5  : 25.8%
+Rank-10 : 30.6%
+Rank-20 : 40.1%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-5"
+Epoch: [6][100/649]	Time 0.377 (0.251)	Data 0.0101 (0.0075)	Xent 0.0317 (0.0386)	Htri 0.0000 (0.0117)	Acc 100.00 (99.78)	
+Epoch: [6][200/649]	Time 0.239 (0.244)	Data 0.0007 (0.0048)	Xent 0.0507 (0.0385)	Htri 0.0000 (0.0144)	Acc 100.00 (99.72)	
+Epoch: [6][300/649]	Time 0.225 (0.240)	Data 0.0004 (0.0039)	Xent 0.0184 (0.0374)	Htri 0.0000 (0.0119)	Acc 100.00 (99.74)	
+Epoch: [6][400/649]	Time 0.256 (0.242)	Data 0.0069 (0.0035)	Xent 0.0766 (0.0373)	Htri 0.0000 (0.0123)	Acc 98.44 (99.70)	
+Epoch: [6][500/649]	Time 0.221 (0.240)	Data 0.0022 (0.0033)	Xent 0.0283 (0.0368)	Htri 0.0000 (0.0112)	Acc 100.00 (99.71)	
+Epoch: [6][600/649]	Time 0.220 (0.241)	Data 0.0004 (0.0031)	Xent 0.0138 (0.0354)	Htri 0.0000 (0.0108)	Acc 100.00 (99.74)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.031/128
+Computing CMC and mAP
+Results ----------
+mAP: 10.3%
+CMC curve
+Rank-1  : 18.9%
+Rank-5  : 25.8%
+Rank-10 : 32.1%
+Rank-20 : 39.3%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-6"
+Epoch: [7][100/649]	Time 0.217 (0.254)	Data 0.0002 (0.0069)	Xent 0.0195 (0.0286)	Htri 0.0000 (0.0115)	Acc 100.00 (99.91)	
+Epoch: [7][200/649]	Time 0.405 (0.250)	Data 0.0002 (0.0050)	Xent 0.0316 (0.0279)	Htri 0.0000 (0.0077)	Acc 100.00 (99.91)	
+Epoch: [7][300/649]	Time 0.236 (0.256)	Data 0.0004 (0.0045)	Xent 0.0604 (0.0289)	Htri 0.0000 (0.0079)	Acc 98.44 (99.86)	
+Epoch: [7][400/649]	Time 0.228 (0.250)	Data 0.0069 (0.0039)	Xent 0.0228 (0.0292)	Htri 0.0000 (0.0075)	Acc 100.00 (99.84)	
+Epoch: [7][500/649]	Time 0.224 (0.246)	Data 0.0004 (0.0035)	Xent 0.0101 (0.0285)	Htri 0.0000 (0.0073)	Acc 100.00 (99.83)	
+Epoch: [7][600/649]	Time 0.233 (0.246)	Data 0.0003 (0.0033)	Xent 0.0122 (0.0281)	Htri 0.0157 (0.0070)	Acc 100.00 (99.83)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.029/128
+Computing CMC and mAP
+Results ----------
+mAP: 10.6%
+CMC curve
+Rank-1  : 18.7%
+Rank-5  : 25.6%
+Rank-10 : 31.9%
+Rank-20 : 41.4%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-7"
+Epoch: [8][100/649]	Time 0.224 (0.251)	Data 0.0072 (0.0070)	Xent 0.0087 (0.0226)	Htri 0.0000 (0.0049)	Acc 100.00 (99.92)	
+Epoch: [8][200/649]	Time 0.215 (0.239)	Data 0.0003 (0.0046)	Xent 0.0414 (0.0225)	Htri 0.0000 (0.0051)	Acc 98.44 (99.89)	
+Epoch: [8][300/649]	Time 0.222 (0.241)	Data 0.0004 (0.0038)	Xent 0.0306 (0.0231)	Htri 0.0000 (0.0051)	Acc 100.00 (99.86)	
+Epoch: [8][400/649]	Time 0.221 (0.237)	Data 0.0002 (0.0033)	Xent 0.0114 (0.0222)	Htri 0.0000 (0.0046)	Acc 100.00 (99.88)	
+Epoch: [8][500/649]	Time 0.306 (0.236)	Data 0.0002 (0.0031)	Xent 0.0176 (0.0212)	Htri 0.0000 (0.0043)	Acc 100.00 (99.90)	
+Epoch: [8][600/649]	Time 0.219 (0.243)	Data 0.0002 (0.0032)	Xent 0.0442 (0.0208)	Htri 0.0000 (0.0040)	Acc 98.44 (99.90)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.029/128
+Computing CMC and mAP
+Results ----------
+mAP: 10.5%
+CMC curve
+Rank-1  : 17.8%
+Rank-5  : 26.2%
+Rank-10 : 33.2%
+Rank-20 : 39.0%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-8"
+Epoch: [9][100/649]	Time 0.218 (0.235)	Data 0.0036 (0.0069)	Xent 0.0277 (0.0175)	Htri 0.0000 (0.0009)	Acc 98.44 (99.91)	
+Epoch: [9][200/649]	Time 0.230 (0.233)	Data 0.0002 (0.0044)	Xent 0.0084 (0.0180)	Htri 0.0000 (0.0045)	Acc 100.00 (99.91)	
+Epoch: [9][300/649]	Time 0.222 (0.238)	Data 0.0003 (0.0035)	Xent 0.0121 (0.0173)	Htri 0.0000 (0.0036)	Acc 100.00 (99.93)	
+Epoch: [9][400/649]	Time 0.213 (0.235)	Data 0.0002 (0.0031)	Xent 0.0061 (0.0171)	Htri 0.0000 (0.0040)	Acc 100.00 (99.93)	
+Epoch: [9][500/649]	Time 0.231 (0.237)	Data 0.0003 (0.0030)	Xent 0.0285 (0.0171)	Htri 0.0000 (0.0037)	Acc 100.00 (99.93)	
+Epoch: [9][600/649]	Time 0.222 (0.235)	Data 0.0002 (0.0029)	Xent 0.0078 (0.0171)	Htri 0.0000 (0.0036)	Acc 100.00 (99.92)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.028/128
+Computing CMC and mAP
+Results ----------
+mAP: 10.5%
+CMC curve
+Rank-1  : 18.2%
+Rank-5  : 25.4%
+Rank-10 : 33.4%
+Rank-20 : 40.1%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-9"
+Epoch: [10][100/649]	Time 0.254 (0.236)	Data 0.0007 (0.0069)	Xent 0.0232 (0.0152)	Htri 0.0000 (0.0037)	Acc 98.44 (99.92)	
+Epoch: [10][200/649]	Time 0.215 (0.241)	Data 0.0002 (0.0047)	Xent 0.0185 (0.0164)	Htri 0.0000 (0.0035)	Acc 100.00 (99.91)	
+Epoch: [10][300/649]	Time 0.240 (0.237)	Data 0.0003 (0.0038)	Xent 0.0093 (0.0167)	Htri 0.0000 (0.0042)	Acc 100.00 (99.92)	
+Epoch: [10][400/649]	Time 0.352 (0.236)	Data 0.0048 (0.0033)	Xent 0.0179 (0.0165)	Htri 0.0000 (0.0040)	Acc 100.00 (99.93)	
+Epoch: [10][500/649]	Time 0.235 (0.237)	Data 0.0072 (0.0031)	Xent 0.0229 (0.0164)	Htri 0.0000 (0.0044)	Acc 100.00 (99.93)	
+Epoch: [10][600/649]	Time 0.241 (0.235)	Data 0.0003 (0.0029)	Xent 0.0097 (0.0163)	Htri 0.0000 (0.0042)	Acc 100.00 (99.94)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.028/128
+Computing CMC and mAP
+Results ----------
+mAP: 10.4%
+CMC curve
+Rank-1  : 18.7%
+Rank-5  : 24.7%
+Rank-10 : 31.5%
+Rank-20 : 39.5%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-10"
+Epoch: [11][100/649]	Time 0.225 (0.235)	Data 0.0003 (0.0077)	Xent 0.0122 (0.0144)	Htri 0.0233 (0.0060)	Acc 100.00 (99.98)	
+Epoch: [11][200/649]	Time 0.224 (0.239)	Data 0.0002 (0.0054)	Xent 0.0223 (0.0144)	Htri 0.0000 (0.0047)	Acc 100.00 (99.96)	
+Epoch: [11][300/649]	Time 0.418 (0.243)	Data 0.0121 (0.0046)	Xent 0.0335 (0.0146)	Htri 0.0000 (0.0051)	Acc 100.00 (99.95)	
+Epoch: [11][400/649]	Time 0.284 (0.247)	Data 0.0079 (0.0042)	Xent 0.0108 (0.0144)	Htri 0.0000 (0.0046)	Acc 100.00 (99.95)	
+Epoch: [11][500/649]	Time 0.214 (0.243)	Data 0.0004 (0.0038)	Xent 0.0092 (0.0143)	Htri 0.0000 (0.0040)	Acc 100.00 (99.95)	
+Epoch: [11][600/649]	Time 0.218 (0.241)	Data 0.0003 (0.0034)	Xent 0.0142 (0.0141)	Htri 0.0000 (0.0038)	Acc 100.00 (99.96)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.027/128
+Computing CMC and mAP
+Results ----------
+mAP: 10.5%
+CMC curve
+Rank-1  : 18.2%
+Rank-5  : 25.4%
+Rank-10 : 32.1%
+Rank-20 : 40.1%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-11"
+Epoch: [12][100/649]	Time 0.370 (0.243)	Data 0.0032 (0.0088)	Xent 0.0137 (0.0143)	Htri 0.0000 (0.0039)	Acc 100.00 (99.97)	
+Epoch: [12][200/649]	Time 0.239 (0.242)	Data 0.0064 (0.0055)	Xent 0.0225 (0.0139)	Htri 0.0000 (0.0037)	Acc 100.00 (99.98)	
+Epoch: [12][300/649]	Time 0.221 (0.237)	Data 0.0004 (0.0042)	Xent 0.0174 (0.0139)	Htri 0.0000 (0.0030)	Acc 100.00 (99.98)	
+Epoch: [12][400/649]	Time 0.231 (0.239)	Data 0.0098 (0.0037)	Xent 0.0098 (0.0138)	Htri 0.0000 (0.0026)	Acc 100.00 (99.98)	
+Epoch: [12][500/649]	Time 0.218 (0.236)	Data 0.0003 (0.0034)	Xent 0.0423 (0.0136)	Htri 0.0000 (0.0025)	Acc 100.00 (99.98)	
+Epoch: [12][600/649]	Time 0.365 (0.237)	Data 0.0087 (0.0033)	Xent 0.0131 (0.0136)	Htri 0.0000 (0.0023)	Acc 100.00 (99.98)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.032/128
+Computing CMC and mAP
+Results ----------
+mAP: 10.6%
+CMC curve
+Rank-1  : 18.7%
+Rank-5  : 25.8%
+Rank-10 : 31.5%
+Rank-20 : 39.9%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-12"
+Epoch: [13][100/649]	Time 0.223 (0.253)	Data 0.0073 (0.0085)	Xent 0.0124 (0.0136)	Htri 0.0000 (0.0019)	Acc 100.00 (99.98)	
+Epoch: [13][200/649]	Time 0.216 (0.240)	Data 0.0003 (0.0054)	Xent 0.0053 (0.0128)	Htri 0.0000 (0.0017)	Acc 100.00 (99.98)	
+Epoch: [13][300/649]	Time 0.298 (0.240)	Data 0.0004 (0.0042)	Xent 0.0107 (0.0133)	Htri 0.0000 (0.0016)	Acc 100.00 (99.96)	
+Epoch: [13][400/649]	Time 0.232 (0.239)	Data 0.0120 (0.0038)	Xent 0.0195 (0.0131)	Htri 0.0000 (0.0019)	Acc 100.00 (99.96)	
+Epoch: [13][500/649]	Time 0.225 (0.237)	Data 0.0002 (0.0035)	Xent 0.0216 (0.0129)	Htri 0.0000 (0.0020)	Acc 100.00 (99.96)	
+Epoch: [13][600/649]	Time 0.225 (0.238)	Data 0.0004 (0.0033)	Xent 0.0147 (0.0127)	Htri 0.0000 (0.0019)	Acc 100.00 (99.96)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.029/128
+Computing CMC and mAP
+Results ----------
+mAP: 10.6%
+CMC curve
+Rank-1  : 18.2%
+Rank-5  : 25.6%
+Rank-10 : 31.7%
+Rank-20 : 39.0%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-13"
+Epoch: [14][100/649]	Time 0.229 (0.283)	Data 0.0004 (0.0083)	Xent 0.0223 (0.0115)	Htri 0.0000 (0.0024)	Acc 100.00 (100.00)	
+Epoch: [14][200/649]	Time 0.239 (0.256)	Data 0.0063 (0.0051)	Xent 0.0101 (0.0116)	Htri 0.0000 (0.0017)	Acc 100.00 (99.99)	
+Epoch: [14][300/649]	Time 0.221 (0.252)	Data 0.0003 (0.0041)	Xent 0.0122 (0.0119)	Htri 0.0000 (0.0022)	Acc 100.00 (99.99)	
+Epoch: [14][400/649]	Time 0.235 (0.246)	Data 0.0078 (0.0035)	Xent 0.0078 (0.0118)	Htri 0.0000 (0.0024)	Acc 100.00 (99.99)	
+Epoch: [14][500/649]	Time 0.303 (0.245)	Data 0.0066 (0.0034)	Xent 0.0125 (0.0120)	Htri 0.0000 (0.0022)	Acc 100.00 (99.98)	
+Epoch: [14][600/649]	Time 0.229 (0.243)	Data 0.0070 (0.0031)	Xent 0.0086 (0.0119)	Htri 0.0000 (0.0020)	Acc 100.00 (99.98)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.031/128
+Computing CMC and mAP
+Results ----------
+mAP: 10.7%
+CMC curve
+Rank-1  : 19.7%
+Rank-5  : 25.6%
+Rank-10 : 31.2%
+Rank-20 : 39.3%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-14"
+Epoch: [15][100/649]	Time 0.221 (0.236)	Data 0.0002 (0.0079)	Xent 0.0101 (0.0120)	Htri 0.0000 (0.0016)	Acc 100.00 (99.97)	
+Epoch: [15][200/649]	Time 0.232 (0.231)	Data 0.0065 (0.0047)	Xent 0.0097 (0.0118)	Htri 0.0000 (0.0026)	Acc 100.00 (99.98)	
+Epoch: [15][300/649]	Time 0.214 (0.234)	Data 0.0002 (0.0039)	Xent 0.0044 (0.0118)	Htri 0.0000 (0.0019)	Acc 100.00 (99.97)	
+Epoch: [15][400/649]	Time 0.250 (0.240)	Data 0.0003 (0.0038)	Xent 0.0069 (0.0117)	Htri 0.0000 (0.0016)	Acc 100.00 (99.98)	
+Epoch: [15][500/649]	Time 0.215 (0.241)	Data 0.0004 (0.0035)	Xent 0.0200 (0.0118)	Htri 0.0000 (0.0017)	Acc 100.00 (99.97)	
+Epoch: [15][600/649]	Time 0.216 (0.238)	Data 0.0004 (0.0032)	Xent 0.0087 (0.0120)	Htri 0.0000 (0.0020)	Acc 100.00 (99.97)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.033/128
+Computing CMC and mAP
+Results ----------
+mAP: 10.7%
+CMC curve
+Rank-1  : 18.9%
+Rank-5  : 24.9%
+Rank-10 : 31.0%
+Rank-20 : 38.6%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-15"
+Epoch: [16][100/649]	Time 0.235 (0.235)	Data 0.0148 (0.0085)	Xent 0.0079 (0.0116)	Htri 0.0000 (0.0026)	Acc 100.00 (100.00)	
+Epoch: [16][200/649]	Time 0.328 (0.237)	Data 0.0049 (0.0055)	Xent 0.0107 (0.0112)	Htri 0.0000 (0.0018)	Acc 100.00 (100.00)	
+Epoch: [16][300/649]	Time 0.238 (0.234)	Data 0.0067 (0.0044)	Xent 0.0117 (0.0111)	Htri 0.0000 (0.0015)	Acc 100.00 (99.99)	
+Epoch: [16][400/649]	Time 0.215 (0.232)	Data 0.0003 (0.0039)	Xent 0.0049 (0.0112)	Htri 0.0000 (0.0016)	Acc 100.00 (100.00)	
+Epoch: [16][500/649]	Time 0.228 (0.234)	Data 0.0003 (0.0035)	Xent 0.0071 (0.0112)	Htri 0.0000 (0.0017)	Acc 100.00 (99.99)	
+Epoch: [16][600/649]	Time 0.213 (0.233)	Data 0.0004 (0.0033)	Xent 0.0072 (0.0114)	Htri 0.0000 (0.0018)	Acc 100.00 (99.98)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.027/128
+Computing CMC and mAP
+Results ----------
+mAP: 10.6%
+CMC curve
+Rank-1  : 18.2%
+Rank-5  : 25.4%
+Rank-10 : 31.9%
+Rank-20 : 38.4%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-16"
+Epoch: [17][100/649]	Time 0.220 (0.232)	Data 0.0002 (0.0071)	Xent 0.0151 (0.0108)	Htri 0.0000 (0.0014)	Acc 100.00 (100.00)	
+Epoch: [17][200/649]	Time 0.230 (0.237)	Data 0.0003 (0.0048)	Xent 0.0093 (0.0119)	Htri 0.0000 (0.0017)	Acc 100.00 (99.98)	
+Epoch: [17][300/649]	Time 0.226 (0.234)	Data 0.0003 (0.0038)	Xent 0.0080 (0.0117)	Htri 0.0000 (0.0019)	Acc 100.00 (99.97)	
+Epoch: [17][400/649]	Time 0.267 (0.232)	Data 0.0002 (0.0033)	Xent 0.0088 (0.0115)	Htri 0.0000 (0.0024)	Acc 100.00 (99.97)	
+Epoch: [17][500/649]	Time 0.240 (0.234)	Data 0.0077 (0.0032)	Xent 0.0219 (0.0115)	Htri 0.0562 (0.0022)	Acc 100.00 (99.97)	
+Epoch: [17][600/649]	Time 0.218 (0.232)	Data 0.0004 (0.0030)	Xent 0.0143 (0.0113)	Htri 0.0000 (0.0022)	Acc 100.00 (99.97)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.028/128
+Computing CMC and mAP
+Results ----------
+mAP: 10.7%
+CMC curve
+Rank-1  : 18.7%
+Rank-5  : 25.2%
+Rank-10 : 32.5%
+Rank-20 : 38.8%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-17"
+Epoch: [18][100/649]	Time 0.240 (0.264)	Data 0.0069 (0.0088)	Xent 0.0069 (0.0122)	Htri 0.0000 (0.0002)	Acc 100.00 (99.98)	
+Epoch: [18][200/649]	Time 0.225 (0.252)	Data 0.0003 (0.0056)	Xent 0.0061 (0.0125)	Htri 0.0498 (0.0011)	Acc 100.00 (99.95)	
+Epoch: [18][300/649]	Time 0.245 (0.244)	Data 0.0003 (0.0045)	Xent 0.0142 (0.0122)	Htri 0.0000 (0.0013)	Acc 100.00 (99.96)	
+Epoch: [18][400/649]	Time 0.230 (0.243)	Data 0.0003 (0.0038)	Xent 0.0051 (0.0118)	Htri 0.0000 (0.0011)	Acc 100.00 (99.96)	
+Epoch: [18][500/649]	Time 0.238 (0.240)	Data 0.0063 (0.0034)	Xent 0.0414 (0.0119)	Htri 0.0867 (0.0013)	Acc 98.44 (99.95)	
+Epoch: [18][600/649]	Time 0.225 (0.238)	Data 0.0002 (0.0030)	Xent 0.0155 (0.0118)	Htri 0.0000 (0.0016)	Acc 100.00 (99.96)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.031/128
+Computing CMC and mAP
+Results ----------
+mAP: 10.6%
+CMC curve
+Rank-1  : 18.2%
+Rank-5  : 26.0%
+Rank-10 : 31.2%
+Rank-20 : 40.1%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-18"
+Epoch: [19][100/649]	Time 0.357 (0.236)	Data 0.0059 (0.0069)	Xent 0.0149 (0.0117)	Htri 0.0000 (0.0004)	Acc 100.00 (99.98)	
+Epoch: [19][200/649]	Time 0.215 (0.237)	Data 0.0001 (0.0047)	Xent 0.0114 (0.0115)	Htri 0.0000 (0.0018)	Acc 100.00 (99.98)	
+Epoch: [19][300/649]	Time 0.237 (0.234)	Data 0.0003 (0.0038)	Xent 0.0214 (0.0113)	Htri 0.0000 (0.0021)	Acc 100.00 (99.98)	
+Epoch: [19][400/649]	Time 0.223 (0.236)	Data 0.0002 (0.0035)	Xent 0.0099 (0.0115)	Htri 0.0000 (0.0019)	Acc 100.00 (99.97)	
+Epoch: [19][500/649]	Time 0.234 (0.240)	Data 0.0093 (0.0034)	Xent 0.0071 (0.0114)	Htri 0.0000 (0.0018)	Acc 100.00 (99.98)	
+Epoch: [19][600/649]	Time 0.217 (0.241)	Data 0.0002 (0.0033)	Xent 0.0082 (0.0114)	Htri 0.0000 (0.0016)	Acc 100.00 (99.98)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.030/128
+Computing CMC and mAP
+Results ----------
+mAP: 10.6%
+CMC curve
+Rank-1  : 18.4%
+Rank-5  : 24.3%
+Rank-10 : 31.5%
+Rank-20 : 40.1%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-19"
+Epoch: [20][100/649]	Time 0.224 (0.248)	Data 0.0004 (0.0073)	Xent 0.0080 (0.0117)	Htri 0.0000 (0.0030)	Acc 100.00 (99.98)	
+Epoch: [20][200/649]	Time 0.216 (0.236)	Data 0.0002 (0.0046)	Xent 0.0226 (0.0115)	Htri 0.0507 (0.0031)	Acc 100.00 (99.97)	
+Epoch: [20][300/649]	Time 0.229 (0.233)	Data 0.0003 (0.0037)	Xent 0.0047 (0.0111)	Htri 0.0000 (0.0030)	Acc 100.00 (99.98)	
+Epoch: [20][400/649]	Time 0.224 (0.235)	Data 0.0004 (0.0033)	Xent 0.0165 (0.0114)	Htri 0.0000 (0.0028)	Acc 100.00 (99.97)	
+Epoch: [20][500/649]	Time 0.216 (0.233)	Data 0.0004 (0.0030)	Xent 0.0069 (0.0114)	Htri 0.0255 (0.0025)	Acc 100.00 (99.97)	
+Epoch: [20][600/649]	Time 0.232 (0.234)	Data 0.0002 (0.0028)	Xent 0.0131 (0.0117)	Htri 0.0000 (0.0023)	Acc 100.00 (99.97)	
+=> Validation
+Evaluating Aic ...
+Extracted features for query set, obtained 1205-by-1000 matrix
+Extracted features for gallery set, obtained 22790-by-1000 matrix
+=> BatchTime(s)/BatchSize(img): 0.031/128
+Computing CMC and mAP
+Results ----------
+mAP: 10.6%
+CMC curve
+Rank-1  : 18.4%
+Rank-5  : 26.0%
+Rank-10 : 31.7%
+Rank-20 : 39.7%
+------------------
+Checkpoint saved to "./model/googlenet-Aic/model.pth.tar-20"
+Elapsed 1:20:31
